@@ -24,3 +24,6 @@ Given:
 - A list of job roles.
 
 For each job role, consule the AI at the ip by seinding ollama request with plaintext explaining OpenHoche to the AI and asking it to classify a given job role. Whatever URI spits back out, store that data for later analysis. Analyse the data for URI patterns to merge all URIs in a reasonable fashion. Do not allow too much duplication in the higher level uris, but lower level duplication is acceptable. E.g. there are many kinds of designers in various industries. Do this for every job role. Wait until the AI is done thinking for each job role. This script take quite some time to run, but will be quick to write I hope. Please write the python script that generates the first full hierarchy data set in open hoche. 
+
+The job roles should be specific to USA as the industries are specific to usa. Again the naming convention for this hierarchy is hoche.2025_job_roles.V<major-version>/<minor-version>.<YYYY>/<MM>/<DD> (patch date).
+
