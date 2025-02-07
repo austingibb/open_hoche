@@ -1,0 +1,26 @@
+Open hoche stands for Open Hierarchical Object Classification and Heuristics Engine. It is a generalized open source means to traverse and compare hierarchical data. The primary innovation of open Hoche is its vast and endless data sets & its ability to perform useful operations on that data set. For example a dataset might exist like so (example uri format).
+
+hoche.2025_name_database.V<major-version>/<minor-version>.2025/02/06.<gender>.<country>.<name_1>.<name_2>.<name_3>...
+
+The … denotes continuation of the pattern I outlined before. The genders are: male, female, androgynous. The countries are USA, China, etc... 
+
+
+Another such example is job roles.
+hoche.2025_job_roles.V<major-version>/<minor-version>.2025/02/06.<
+North American Industry Classification System Industry ID>.<sector>.<service/subsector>....
+
+In this particular hierarchy depths beyond the service/subsector level of the hierarchy tree are specific to each industry. For example perhaps a software engineer might be:
+
+hoche.<versioninfo/metadata>.information_technology.software.development.backend_developer.node.js_backend_developer
+
+Or a software architect might be:
+hoche.<versioninfo/metadata>.information_technology.computer_systems_design.architects.software_architect
+
+I want you to write a python script that uses a local LLM to assign a URI in this framework to every possible job role and assign a reasonable URI in this framework.
+
+Given:
+- A list of the naics ( North American Industry Classification System - NAICS  ) industries.
+- An ip for where the local ai ollama is running.
+- A list of job roles.
+
+For each job role, consule the AI at the ip by seinding ollama request with plaintext explaining OpenHoche to the AI and asking it to classify a given job role. Whatever URI spits back out, store that data for later analysis. Analyse the data for URI patterns to merge all URIs in a reasonable fashion. Do not allow too much duplication in the higher level uris, but lower level duplication is acceptable. E.g. there are many kinds of designers in various industries. Do this for every job role. Wait until the AI is done thinking for each job role. This script take quite some time to run, but will be quick to write I hope. Please write the python script that generates the first full hierarchy data set in open hoche. 
