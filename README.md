@@ -1,7 +1,7 @@
 # WELCOME TO OPEN HOCHE
 Open HOCHE stands for Open Hierarchical Object Classification & Heuristics Engine. 
 
-Classify anything you want in an open-ended ambiguous fashion. Handling ambiguity is part of the design.
+Classify anything you want in an open-ended ambiguous fashion. An algorithm for traversing large heirarchical datasets using LLMs, or advanced AI models.
 
 # Etymology
 
